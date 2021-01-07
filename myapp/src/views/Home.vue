@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <van-button type="primary">hello cotton</van-button>
-    <van-button type="danger">hello cotton</van-button>
+    <van-button type="danger">hello</van-button>
   </div>
 </template>
 
