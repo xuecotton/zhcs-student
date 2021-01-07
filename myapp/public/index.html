@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script>
+      "use strict";
+
+(function (win, doc) {
+  var docEl = doc.documentElement,
+      resizeEvent = "orientationchange" in window ? "orientationchange" : "resize",
+      resizeHandle = function resizeHandle() {
+    var WIDTH = docEl.clientWidth;
+    var size = 100 * (WIDTH / 750);
+    window.fsize = size;
+    docEl.style.fontSize = size + "px";
+  };
+
+  window.addEventListener(resizeEvent, resizeHandle, false);
+  resizeHandle();
+})(window, document);
+
+// WIDTH 是设计图的大小
+// 将7行的算式运行之后得出 100  即在量出的实际尺寸之后直接除以100 加上rem 就可以作为rem页面布局的尺寸
+// 字体是12px 默认为0.12rem
+    </script>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

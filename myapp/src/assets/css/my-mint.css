@@ -1,0 +1,11 @@
+.mint-search {
+  height: 50px !important;
+}
+
+.mint-searchbar {
+  background-color: #ffffff !important;
+}
+
+.mint-searchbar-inner, .mint-searchbar-core {
+  background-color: #f1f1f1 !important;
+}
