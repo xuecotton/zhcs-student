@@ -6,6 +6,10 @@
     <van-button type="danger">按钮</van-button>
     <van-button type="danger">按钮</van-button>
     <van-button type="danger">按钮</van-button>
+    <van-button type="danger">按钮</van-button>
+    <van-button type="danger">按钮</van-button>
+    <van-button type="danger">按钮</van-button>
+    <van-button type="danger">按钮</van-button>
     <van-steps :active="2">
       <van-step>买家下单</van-step>
       <van-step>商家接单</van-step>
