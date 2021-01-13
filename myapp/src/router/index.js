@@ -4,20 +4,21 @@ import Home from '../views/Home'
 
 // 组件开始
 import MyHeader from '../components/MyHeader'
+import MyFooter from '../components/MyFooter'
 // 组件结束
 
 // 页面
 import Index from '../views/Index'
 import Order from '../views/Order'
-
+import Live from '../views/Live'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name:'Index',
-    component: Index
+    path: '/live',
+    name:'Live',
+    component: Live
   },
   {
     path: '/order',
@@ -25,9 +26,19 @@ const routes = [
     component: Order
   },
   {
+    path: '/',
+    name:'Index',
+    component: Index
+  },
+  {
     path: '/header',
     name:'MyHeader',
     component: MyHeader
+  },
+  {
+    path: '/footer',
+    name:'MyFooter',
+    component: MyFooter
   },
   {
     path: '/home',
